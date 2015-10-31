@@ -65,16 +65,19 @@ might create a directory structure
 ./myProject
 ├── left-hand
 |   ├── put-your-left-hand-in.md
-|   └── put-your-left-hand-out.md
+|   ├── put-your-left-hand-out.md
+|   └── shake-it-all-about.md
 ├── right-hand
 |   ├── put-your-right-hand-in.md
-|   └── put-your-right-hand-out.md
+|   ├── put-your-right-hand-out.md
+|   └── shake-it-all-about.md
 ├── do-the-hokey-pokey.md
 ├── put-your-left-hand-in.md
 ├── put-your-left-hand-out.md
 ├── put-your-right-hand-in.md
 ├── put-your-right-hand-out.md
-└── turn-yourself-about.md
+├── turn-yourself-around.md
+└── shake-it-all-about.md
 ```
 
 ### WYSIWYG mode?
