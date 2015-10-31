@@ -32,26 +32,6 @@ It only lasts 48 hours so it is #due on 2015-11-09 8:00 PM EST.
 Since we aren't allowed to begin early, the task is about 0% #complete.
 ```
 
-Rendered, that looks like
----
-## Create an task organizer
-
-We should write an task organizer in node.js. We should name it moto, after our little sister's stuffed lamb.
-
-I've #assigned #twitchard and #atomopawn to do this, because they are 1337 hax0rz.
-
-It's #priority 100, because existing task organizers are a crime against humanity which cause software engineers an inordinate amount of rage.
-
-This task is #pending until Node Knockout begins.
-
-That is #scheduled to happen at 2015-11-07 8:00 PM EST.
-
-It only lasts 48 hours so it is #due on 2015-11-09 8:00 PM EST.
-
-Since we aren't allowed to begin early, the task is about 0% #complete.
-
----
-
 
 
 ## Filtering
