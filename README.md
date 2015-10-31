@@ -49,6 +49,7 @@ That is #scheduled to happen at 2015-11-07 8:00 PM EST.
 It only lasts 48 hours so it is #due on 2015-11-09 8:00 PM EST.
 
 Since we aren't allowed to begin early, the task is about 0% #complete.
+
 ---
 
 
