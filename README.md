@@ -12,20 +12,47 @@ In a traditional task organizer, you control metadata (who is assigned, what is 
 
 In moto, your task is a markdown document and metadata is specified inline using hashtags.
 
-For example, here is an example task that specifies several different pieces of metadata:
+### Example
+Here is an example task that specifies several different pieces of metadata:
 ``` make-moto.md
-Create an task organizer
+## Create an task organizer
 
 We should write an task organizer in node.js. We should name it moto, after our little sister's stuffed lamb.
+
 I've #assigned #twitchard and #atomopawn to do this, because they are 1337 hax0rz.
+
 It's #priority 100, because existing task organizers are a crime against humanity which cause software engineers an inordinate amount of rage.
 
 This task is #pending until Node Knockout begins.
+
 That is #scheduled to happen at 2015-11-07 8:00 PM EST.
+
 It only lasts 48 hours so it is #due on 2015-11-09 8:00 PM EST.
 
-Since we aren't allowed to begin early, the task is about 0% complete.
+Since we aren't allowed to begin early, the task is about 0% #complete.
 ```
+
+Rendered, that looks like
+---
+## Create an task organizer
+
+We should write an task organizer in node.js. We should name it moto, after our little sister's stuffed lamb.
+
+I've #assigned #twitchard and #atomopawn to do this, because they are 1337 hax0rz.
+
+It's #priority 100, because existing task organizers are a crime against humanity which cause software engineers an inordinate amount of rage.
+
+This task is #pending until Node Knockout begins.
+
+That is #scheduled to happen at 2015-11-07 8:00 PM EST.
+
+It only lasts 48 hours so it is #due on 2015-11-09 8:00 PM EST.
+
+Since we aren't allowed to begin early, the task is about 0% #complete.
+---
+
+
+
 ## Filtering
 What if I am interesting in seeing all the tasks assigned to me? Then, I need only search for all the tasks with "#assigned" and "#twitchard" in the same line. Maybe I'm not interested in tasks that are finished, so I could exclude tasks that contain the hashtag "#done". Maybe I want to see all the highest priority tasks, then I display any tasks that contain the hashtag "#priority" followed by a number greater than 80.
 Dates are tricky. For tasks due in the coming week, the logic is "display all tasks where the hashtag #due is on the same line as something that can be parsed and resolved to a date within the next week." Maybe we will have to enforce that dates follow a specific format, or maybe we can find an npm module to help parse natural language dates.
