@@ -76,3 +76,6 @@ might create a directory structure
 ├── put-your-right-hand-out.md
 └── turn-yourself-about.md
 ```
+
+### WYSIWYG mode?
+http://hallojs.org/demo/markdown/
