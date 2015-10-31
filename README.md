@@ -96,19 +96,3 @@ might create a directory structure
 ├── put-your-right-hand-out.md
 └── turn-yourself-about.md
 ```
-
-
-
-
-
-
-
-Moto is the name of our little sister's stuffed lamb.
-
-This task is #pending until the Node Knockout competition begins.
-
-The hack-a-thon, and therefore this task, is #scheduled to begin on 2015-10-17 8:00 PM EST
-This task is #due on 2015-10-18 8:00 PM EST
-This task is #assigned to #twitchard and #atomopawn
-
-```
