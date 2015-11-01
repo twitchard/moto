@@ -14,7 +14,9 @@ In moto, your task is a markdown document and metadata is specified inline using
 
 ### Example
 Here is an example task that specifies several different pieces of metadata:
+
 ``` make-moto.md
+
 ## Create an task organizer
 
 We should write an task organizer in node.js. We should name it moto, after our little sister's stuffed lamb.
@@ -35,7 +37,7 @@ Since we aren't allowed to begin early, the task is about 0% #complete.
 
 
 ## Filtering
-What if I am interesting in seeing all the tasks assigned to me? Then, I need only search for all the tasks with "#assigned" and "#twitchard" in the same line. Maybe I'm not interested in tasks that are finished, so I could exclude tasks that contain the hashtag "#done". Maybe I want to see all the highest priority tasks, then I display any tasks that contain the hashtag "#priority" followed by a number greater than 80.
+What if I am interested in seeing all the tasks assigned to me? Then, I need only search for all the tasks with "#assigned" and "#twitchard" in the same line. Maybe I'm not interested in tasks that are finished, so I could exclude tasks that contain the hashtag "#done". Maybe I want to see all the highest priority tasks, then I display any tasks that contain the hashtag "#priority" followed by a number greater than 80.
 Dates are tricky. For tasks due in the coming week, the logic is "display all tasks where the hashtag #due is on the same line as something that can be parsed and resolved to a date within the next week." Maybe we will have to enforce that dates follow a specific format, or maybe we can find an npm module to help parse natural language dates.
 
 ### Dashboards
@@ -43,6 +45,8 @@ Users should able to specify custom filters and save their filter as a "dashboar
 
 #### Thumbnails
 How does an issue appear on the dashboard? I think each issue gets a "slug" (the name of the document, like a filename), and a "short description" (the first line < 50 characters, like git?), but then possibly users will want to display various metadata on the thumbnail as well. (Who is assigned? What is the priority?) We should come up with a sensible default, but leave it customizable.
+
+--- Note from Robert: "summary" might be a more standard name for the "slug".
 
 ### Notifications
 Users should be able to subscribe to receive an e-mail notification whenever a particular dashboard changes. For example, whenever a new issue is assigned to them, or when the status of an issue they are subscribed to changes. Maybe we should skip this for the hackathon, but we should definitely keep this in mind as we engineer the code.
@@ -52,6 +56,8 @@ On the web interface you should be able to create/edit/view tasks, and display/s
 
 ## Command-line / File System Interface
 I hate using my web browser, and I would love to update the progress of my issues in vim. Moto should provide a command-line utility that copies all the "tasks" of a project into a folder on the local machine, and opens up a socket to the main moto server to sync changes between the two. 
+
+-- Note from Robert: A virtual filesystem interface might be better than actual copies.
 
 All the issues should live in the base directory.
 Each dashboard should have a subdirectory with symbolic links to the issues in the main directory

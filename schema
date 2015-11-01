@@ -1,0 +1,16 @@
+tasks: 
+id UNIQUE SERIAL PRIMARY KEY
+summary UNIQUE TEXT
+description TEXT
+due DATE
+priority INTEGER
+status TEXT -- ENUM LIKE (open, assigned, closed)
+
+assignment:
+task REFERENCES tasks(id)
+username TEXT
+
+hashtags:
+tag: TEXT
+line: TEXT
+task: REFERENCES assignment(task)
